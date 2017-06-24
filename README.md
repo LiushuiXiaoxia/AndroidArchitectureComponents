@@ -32,7 +32,7 @@ AAC主要提供了Lifecycle，ViewModel，LiveData，Room等功能，下面依�
 
 AAC的架构是这样的：
 
-![新的架构](https://github.com/LiushuiXiaoxia/AndroidArchitectureComponents/blob/master/doc/final-architecture.png)
+![新的架构](https://raw.githubusercontent.com/LiushuiXiaoxia/AndroidArchitectureComponents/master/doc/final-architecture.png)
 
 * Activity/Fragment
 
@@ -168,7 +168,7 @@ AAC中提供了Lifecycle，用来帮助我们解决这样的问题。LifeCycle�
 
 Lifecycle的状态，用于追踪中Lifecycle对象，如下图所示。
 
-![Lifecycle的状态](https://github.com/LiushuiXiaoxia/AndroidArchitectureComponents/blob/master/doc/lifecycle-states.png)
+![Lifecycle的状态](https://raw.githubusercontent.com/LiushuiXiaoxia/AndroidArchitectureComponents/master/doc/lifecycle-states.png)
 
 上面的定位功能代码，使用LifeCycle实现以后是这样的，实现一个`LifecycleObserver`接口，然后用注解标注状态，最后在LifecycleOwner中添加监听。
 
@@ -424,7 +424,7 @@ public class MyActivity extends AppCompatActivity {
 
 当我们获取ViewModel实例的时候，ViewModel是通过ViewModelProvider保存在LifeCycle中，ViewModel会一直保存在LifeCycle中，直到Activity或者Fragment销毁了，触发LifeCycle被销毁，那么ViewModel也会被销毁的。下面是ViewModel的生命周期图。
 
-![](https://github.com/LiushuiXiaoxia/AndroidArchitectureComponents/blob/master/doc/viewmodel-lifecycle.png)
+![](https://raw.githubusercontent.com/LiushuiXiaoxia/AndroidArchitectureComponents/master/doc/viewmodel-lifecycle.png)
 
 ## Room
 
@@ -446,7 +446,7 @@ DAO是 Data Access Object的缩写，表示从从代码中直接访问数据库�
 
 下面是官方给的结构图。
 
-![](https://github.com/LiushuiXiaoxia/AndroidArchitectureComponents/blob/master/doc/room_architecture.png)
+![](https://raw.githubusercontent.com/LiushuiXiaoxia/AndroidArchitectureComponents/master/doc/room_architecture.png)
 
 代码示例：
 
